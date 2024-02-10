@@ -21,7 +21,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       router.push('/landing'); 
-    }, 3350); 
+    }, 3200); 
 
     const wordTimer = setInterval(() => {
       if (currentWordIndex < words.length - 1) {
