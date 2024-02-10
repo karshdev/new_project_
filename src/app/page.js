@@ -22,7 +22,6 @@ export default function Home() {
     const timer = setTimeout(() => {
       router.push('/landing'); 
     }, 3200); 
-
     const wordTimer = setInterval(() => {
       if (currentWordIndex < words.length - 1) {
         setCurrentWordIndex((prevIndex) => prevIndex + 1); 

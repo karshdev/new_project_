@@ -1,13 +1,12 @@
 import Layout from '@/Components/Layout';
-import Navbar from '@/Components/Navbar'
 import React from 'react'
 
-const Landing = () => {
+const Bhajan = () => {
   return (
     <Layout>
-      <div>Landing</div>
+      <div>Bhajan</div>
     </Layout>
   );
 }
 
-export default Landing
+export default Bhajan
