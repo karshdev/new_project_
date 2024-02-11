@@ -25,7 +25,7 @@ const Hamburger = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className=" text-black"
             >
-              Contact Us
+              Contact Uss
             </motion.a>
             <motion.a
               href="/about-us"
