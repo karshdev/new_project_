@@ -1,18 +1,18 @@
-import Heading from '@/Components/Heading';
-import HomeContainer from '@/Components/HomeContainer';
-import Layout from '@/Components/Layout';
-import Navbar from '@/Components/Navbar'
-import Sidebar from '@/Components/Sidebar';
+import Heading from '@/components/Heading';
+import HomeContainer from '@/components/HomeContainer';
+import Layout from '@/components/Layout';
+import Navbar from '@/components/Navbar'
+import Sidebar from '@/components/Sidebar';
 import React from 'react'
 
 const Landing = () => {
   return (
     <Layout>
       <Heading />
-      {/* <div className="flex h-screen px-12">
+      <div className="flex h-screen px-12">
         <HomeContainer />
         <Sidebar />
-      </div> */}
+      </div>
     </Layout>
   );
 }
