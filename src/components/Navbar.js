@@ -3,6 +3,7 @@ import { FiMenu } from "react-icons/fi";
 import Hamburger from './Hamburger';
 
 
+
 const Navbar = () => {
   return (
     <main className="w-[100%]  ">

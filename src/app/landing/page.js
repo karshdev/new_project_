@@ -1,7 +1,7 @@
-import Heading from '@/Components/Heading';
-import HomeContainer from '@/Components/HomeContainer';
-import Layout from '@/Components/Layout';
-import Sidebar from '@/Components/Sidebar';
+import Heading from '@/components/Heading';
+import HomeContainer from '@/components/HomeContainer';
+import Layout from '@/components/Layout';
+import Sidebar from '@/components/Sidebar';
 
 import React from 'react'
 
