@@ -1,8 +1,8 @@
 import Heading from '@/Components/Heading';
 import HomeContainer from '@/Components/HomeContainer';
 import Layout from '@/Components/Layout';
-import Navbar from '@/Components/Navbar'
 import Sidebar from '@/Components/Sidebar';
+
 import React from 'react'
 
 const Landing = () => {
