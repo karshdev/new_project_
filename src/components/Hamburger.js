@@ -6,7 +6,7 @@ const Hamburger = () => {
   const [menu, setMenu] = useState(false);
 
   return (
-    <div className="relative h-[100%] w-[100%] flex items-center justify-center cursor-pointer">
+    <div className="relative h-[100%] w-[100%] flex items-center justify-center cursor-pointer z-[1000000]">
       <div className="sm:hidden absolute right-[10px] text-[20px]">
         <FiMenu onClick={() => setMenu(!menu)} />
       </div>
