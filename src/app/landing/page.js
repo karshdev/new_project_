@@ -9,10 +9,10 @@ const Landing = () => {
   return (
     <Layout>
       <Heading />
-      <div className="flex h-screen px-12">
+      {/* <div className="flex h-screen px-12">
         <HomeContainer />
         <Sidebar />
-      </div>
+      </div> */}
     </Layout>
   );
 }
