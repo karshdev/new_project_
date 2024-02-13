@@ -22,7 +22,7 @@ export async function POST(req) {
     }
   } 
   export async function GET(req) {
-    console.log("Inside GEt req")
+
     const { searchParams } = new URL(req.url);
     const key=searchParams.get("key")
     await connectMongoDB();

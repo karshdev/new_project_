@@ -18,14 +18,14 @@ const handleChange = (e) => {
     [name]: value,
   }));
 };
-console.log("Form",form)
+
 
  const handleChangeImg = (e) => {
    const target = e.target;
    const item = target.files[0];
    setFile(item);
  };
- console.log("File",file)
+
  const upload = async () => {
    try {
      const data = new FormData();
@@ -43,11 +43,11 @@ console.log("Form",form)
 
      const resData = await res.json();
 
-     console.log(resData);
+
 
      return resData.url;
    } catch (err) {
-     console.log(err);
+  
    }
  };
 
@@ -55,7 +55,7 @@ console.log("Form",form)
       e.preventDefault();
       try {
         const url = await upload();
-        console.log("PHOTA KA URL", url);
+   
 
         const res = await axios.post(`/api/addchalisa`, {
           image: url,
@@ -63,14 +63,14 @@ console.log("Form",form)
         });
 
         const data = await res.data();
-        console.log("data",data)
+   
         if(data.ok){
-            console.log("Successfully added")
+          
         }else{
-            console.log("Error at backend")
+
         }
       } catch (err) {
-        console.log(err);
+
       }
     };
   return (

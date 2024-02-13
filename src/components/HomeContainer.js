@@ -16,7 +16,7 @@ const getData = async () => {
       throw new Error("err");
     }
   } catch (err) {
-    console.log(err);
+
   }
 };
 

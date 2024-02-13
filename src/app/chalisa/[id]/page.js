@@ -15,7 +15,7 @@ if (res) {
   throw new Error("Errors from backend");
 }
 }catch(err){
-console.log(err)
+
   return false;
 }
 }
