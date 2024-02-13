@@ -2,14 +2,17 @@ import Layout from '@/components/Layout'
 import React from 'react'
 const getData=async(id)=>{
 try{
-const response = await fetch(`http://localhost:3000/api/getChalisa/${id}`,{
-  cache:"no-cache"
-});
+const response = await fetch(
+  `${process.env.NEXTAUTH_URL}/api/getChalisa/${id}`,
+  {
+    cache: "no-cache",
+  }
+);
 const res = await response.json();
 if (res) {
   return res;
 } else {
-  throw new Error("Error from backend");
+  throw new Error("Errors from backend");
 }
 }catch(err){
 console.log(err)

@@ -3,9 +3,12 @@ import MostSearchEd from "./MostSearchEd";
 
 const getData = async () => {
   try {
-    const res = await fetch("http://localhost:3000/api/addchalisa?key=mostsearched",{
-      cache:"no-cache"
-    });
+    const res = await fetch(
+      `${process.env.NEXTAUTH_URL}/api/addchalisa?key=mostsearched`,
+      {
+        cache: "no-cache",
+      }
+    );
     const data = await res.json();
     if (data.length >= 1) {
       return data;
