@@ -4,9 +4,6 @@ const getData=async(id)=>{
 try{
 const response = await fetch(
   `${process.env.NEXTAUTH_URL}/api/getChalisa/${id}`,
-  {
-    cache: "no-cache",
-  }
 );
 const res = await response.json();
 if (res) {

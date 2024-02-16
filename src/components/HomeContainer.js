@@ -4,10 +4,7 @@ import MostSearchEd from "./MostSearchEd";
 const getData = async () => {
   try {
     const res = await fetch(
-      `${process.env.NEXTAUTH_URL}/api/addchalisa?key=mostsearched`,
-      {
-        cache: "no-cache",
-      }
+      `${process.env.NEXTAUTH_URL}/api/addchalisa?key=mostsearched`
     );
     const data = await res.json();
     if (data.length >= 1) {
