@@ -26,7 +26,7 @@ const Heading = () => {
   return (
     <div className="w-[100%] flex items-center justify-center p-10">
       <motion.div
-        className="mb-20 max-w-[50rem] h-[200px] text-center sm:mb-0 scroll-mt-[100rem]"
+        className="mb-15 max-w-[50rem] h-[200px] text-center sm:mb-0 scroll-mt-[100rem]"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
