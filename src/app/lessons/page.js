@@ -4,4 +4,4 @@ const Lessons = () => {
   return <div>History</div>;
 }
 
-export default History;
+export default Lessons;
