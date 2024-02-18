@@ -1,9 +1,10 @@
 "use client"
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
+
 export default function Home() {
- const router = useRouter();
+  const router = useRouter();
   const words = [
     "जय श्री राम",
     "जय बजरंगबली",
@@ -14,25 +15,26 @@ export default function Home() {
     "जय सिया राम",
     "जय माँ काली",
     "जय श्री कृष्णा",
-    "स्वागत है "
+    "जय श्री राम",
+    "जय बजरंगबली",
+    "स्वागत है",
   ];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      router.push('/landing'); 
-    }, 3200); 
     const wordTimer = setInterval(() => {
       if (currentWordIndex < words.length - 1) {
-        setCurrentWordIndex((prevIndex) => prevIndex + 1); 
+        setCurrentWordIndex((prevIndex) => prevIndex + 1);
+      } else {
+        clearInterval(wordTimer);
+        router.push("/landing");
       }
     }, 300);
 
     return () => {
-      clearTimeout(timer);
       clearInterval(wordTimer);
     };
-  }, []);
+  }, [currentWordIndex, router]);
 
   return (
     <motion.div
@@ -46,19 +48,19 @@ export default function Home() {
         color: "white",
         position: "relative",
       }}
-      initial={{ opacity: 0 }} 
+      initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 1 }} 
+      transition={{ duration: 1 }}
     >
       <motion.h1
-        key={words[currentWordIndex]} 
+        key={words[currentWordIndex]}
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className='text-[25px]'
+        className="text-[25px]"
       >
         {words[currentWordIndex]}
       </motion.h1>
     </motion.div>
-  )
+  );
 }

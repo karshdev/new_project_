@@ -20,7 +20,7 @@ const getData = async () => {
 const HomeContainer = async () => {
   const data = await getData();
   return (
-    <div className="w-[100%] sm:w-2/3 bg-white shadow-lg p-4 rounded-lg">
+    <div className=" sm:w-2/3  bg-white shadow-lg p-4 rounded-lg">
       <h1 className="text-center font-serif text-[30px] mb-4">
         Most Visited Chalisa
       </h1>

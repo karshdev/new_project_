@@ -1,8 +1,11 @@
+import AartiContainer from '@/components/AartiContainer';
+import BhajanContainer from '@/components/BhajanContainer';
 import Button from '@/components/Button';
 import Heading from '@/components/Heading';
 import HomeContainer from '@/components/HomeContainer';
 import Layout from '@/components/Layout';
 import Sidebar from '@/components/Sidebar';
+import Suggestion from '@/components/Suggestion';
 
 import React from 'react'
 
@@ -14,7 +17,6 @@ const Landing = () => {
      { labelText: "Lessons", bgColor: "bg-[#5dbea3]", url: "/lessons" },
      { labelText: "Games", bgColor: "bg-[#dd7973]", url: "/games" },
    ];
-  
   return (
     <Layout>
       <Heading />
@@ -22,20 +24,28 @@ const Landing = () => {
         {buttons.map((button, index) => (
           <Button
             key={index}
-            className={`flex-grow ${
-              button.bgColor
-            } text-white font-semibold py-4 px-8 rounded-lg  text-[18px]  focus:outline-none focus:ring-2 focus:ring-${button.bgColor.slice(
+            className={`flex-grow text-white font-semibold py-4 px-8 rounded-lg  text-[18px]  focus:outline-none focus:ring-2 focus:ring-${button.bgColor.slice(
               3
             )}`}
             lableText={button.labelText}
             url={button.url}
+            bgColor={button.bgColor}
           />
         ))}
       </div>
-      <div className="flex h-screen px-12 gap-2">
+      <div className="flex  sm:px-12 gap-2 mt-[15px] sm:mt-0">
         <HomeContainer />
         <Sidebar />
       </div>
+      <div className="w-[100%] sm:px-12 mt-[15px] sm:mt-0">
+        <BhajanContainer />
+      </div>
+     
+        <AartiContainer />
+      
+      
+        <Suggestion />
+
     </Layout>
   );
 }

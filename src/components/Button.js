@@ -2,12 +2,12 @@
 import React from 'react'
 import clsx from "clsx";
 const Button = (props) => {
-    const { className = "", lableText,url } = props;
+    const { className = "", lableText, url, bgColor } = props;
   return (
     <div>
       <button
         className={clsx(
-          "bg-blue-500 text-white font-semibold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500",
+          `${bgColor}  hover:scale-[1.1] transition-all text-white font-semibold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500`,
           className
         )}
         onClick={() => {
@@ -19,5 +19,4 @@ const Button = (props) => {
     </div>
   );
 }
-
 export default Button

@@ -10,6 +10,7 @@ module.exports = {
       sans: ["Arial", "Helvetica", "sans-serif"],
       serif: ["Georgia", "serif"],
       mono: ["Menlo", "Monaco", "monospace"],
+      raleway: ["Josefin Sans", "sans-serif"],
     },
     extend: {
       backgroundImage: {
