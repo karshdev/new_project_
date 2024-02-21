@@ -13,7 +13,6 @@ const getData = async () => {
       throw new Error("err");
     }
   } catch (err) {
-
   }
 };
 

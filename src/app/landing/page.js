@@ -40,8 +40,10 @@ const Landing = () => {
       <div className="w-[100%] sm:px-12 mt-[15px] sm:mt-0">
         <BhajanContainer />
       </div>
-     
+        <div className='w-[100%] sm:px-12 mt-[15px] sm:mt-0'>
         <AartiContainer />
+
+        </div>
       
       
         <Suggestion />

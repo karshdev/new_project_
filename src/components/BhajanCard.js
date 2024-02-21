@@ -52,7 +52,7 @@ const BhajanCard = ({ title, description, audioSrc, imgSrc }) => {
   const progress = duration > 0 ? (currentTime / duration) * 100 + "%" : "0%";
 console.log("Duration",duration,"currenttime",currentTime)
   return (
-    <div className="bg-white w-[100%] sm:w-[45%] shadow-lg rounded-lg">
+    <div className="bg-white w-[100%] sm:w-[45%]  bg-gradient-to-br from-gray-200 to-white p-6 rounded-lg shadow-md">
       <div className="flex p-4 flex-col sm:flex-row">
         <div>
           <img
